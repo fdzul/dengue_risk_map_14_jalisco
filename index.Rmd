@@ -144,7 +144,6 @@ hotspots_map(cve_ent = "14",
              locality = "Autlán de Navarro",
              hotspots = cases_hotspots_agebs19,
              static_map = FALSE)
-
 ```
 
 ### [**Cihuatlan**]{style="color:#990000"}
@@ -156,3 +155,68 @@ hotspots_map(cve_ent = "14",
              static_map = FALSE)
 
 ```
+
+
+# **Hotspots del Vector del Dengue**
+
+## Column {.tabset}
+
+### **<span style="color:#990000">Guadalajara</span>**
+```{r vector_hotspots_guadalajara, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
+                                 locality = c("Guadalajara",
+                                              "Tlaquepaque",
+                                              "Zapopan", 
+                                              "Tonalá"),
+                                 cve_ent = "14",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### **<span style="color:#990000">Puerto Vallarta</span>**
+```{r vector_hotspots_vallarta, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
+                                 locality = "Puerto Vallarta",
+                                 cve_ent = "14",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### **<span style="color:#990000">Autlan</span>**
+```{r vector_hotspots_autlan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
+                                 locality = "Autlan de Navarro",
+                                 cve_ent = "14",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### **<span style="color:#990000">La Barca</span>**
+```{r vector_hotspots_barca, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
+                                 locality = "La barca",
+                                 cve_ent = "14",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### **<span style="color:#990000">Cihuatlan</span>**
+```{r vector_hotspots_cihuatlan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
+                                 locality = "Cihuatlán",
+                                 cve_ent = "14",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### **<span style="color:#990000">Tequila</span>**
+```{r vector_hotspots_tequila, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
+                                 locality = "Tequila",
+                                 cve_ent = "14",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
