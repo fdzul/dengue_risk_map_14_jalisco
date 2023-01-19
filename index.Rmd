@@ -220,3 +220,69 @@ eggs_hotspots_intensity_map_year(betas = betas_14_jalisco,
                                  name = "SunsetDark")
 ```
 
+
+# **Mapa del Riesgo de Transmisión del Dengue**
+
+## Column {.tabset}
+
+### [**Guadalajara**]{style="color:#7d9029"}
+
+```{r risk_map_guadalajara, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_14_jalisco,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = c("Guadalajara",
+                                "Tlaquepaque",
+                                "Zapopan", 
+                                "Tonalá"),
+                   cve_ent = "14",
+                   intensity_perc = 25)
+risk_map(risk = risk,
+         staticmap = FALSE)
+```
+
+
+### [**Puerto Vallarta**]{style="color:#7d9029"}
+
+```{r risk_map_vallarta, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_14_jalisco,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Puerto Vallarta",
+                   cve_ent = "14",
+                   intensity_perc = 25)
+risk_map(risk = risk,
+         staticmap = FALSE)
+```
+
+### [**Autlan**]{style="color:#7d9029"}
+
+```{r risk_map_autlan, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_14_jalisco,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Autlan de Navarro",
+                   cve_ent = "14",
+                   intensity_perc = 25)
+risk_map(risk = risk,
+         staticmap = FALSE)
+```
+
+### [**Cihuatlán**]{style="color:#7d9029"}
+```{r risk_map_cihuatlan, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_14_jalisco,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Cihuatlán",
+                   cve_ent = "14",
+                   intensity_perc = 25)
+risk_map(risk = risk,
+         staticmap = FALSE)
+```
+
+### [**Ciudad Guzman**]{style="color:#7d9029"}
+```{r risk_map_cd_guzman, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_14_jalisco,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Ciudad Guzman",
+                   cve_ent = "14",
+                   intensity_perc = 25)
+risk_map(risk = risk,
+         staticmap = FALSE)
+```
